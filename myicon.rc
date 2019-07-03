@@ -1,0 +1,30 @@
+﻿IDI_ICON1               ICON    DISCARDABLE     "Dustend19.ico"
+
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",        "Dustend"
+            VALUE "FileDescription",    "Computer Dust Control"
+            VALUE "FileVersion",        "1.0.0.0\0"
+            VALUE "InternalName",       "Computer Dust Control"
+            VALUE "LegalCopyright",     "Copyright © 2010 Your Organization"
+            VALUE "LegalTrademarks1",   "All Rights Reserved"
+            VALUE "LegalTrademarks2",   "All Rights Reserved"
+            VALUE "OriginalFilename",   "ComputerDustControl.exe"
+            VALUE "ProductName",        "Computer Dust Control"
+            VALUE "ProductVersion",     "1.0\0"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END

@@ -1,0 +1,4668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>625</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Tahoma</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Computer Dust Control</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rc.qrc">
+    <normaloff>:/images/Dustend19.ico</normaloff>:/images/Dustend19.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(103, 103, 103);</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>900</width>
+     <height>625</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="mainLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>81</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/images/fon2.png); background-repeat: repeat-x;</string>
+        </property>
+        <widget class="QLabel" name="logoLbl">
+         <property name="geometry">
+          <rect>
+           <x>5</x>
+           <y>6</y>
+           <width>128</width>
+           <height>69</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string>Click to visit www.Dustend.com</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+background-image: url(none);  background-color: transparent; background-repeat: no-repeat; }
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+background-image: url(none);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="rc.qrc">:/images/Dustend.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="openExternalLinks">
+          <bool>false</bool>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::LinksAccessibleByMouse</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="osNameLbl">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>20</y>
+           <width>691</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Tahoma</family>
+           <pointsize>8</pointsize>
+           <italic>false</italic>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(none); background-color: transparent; color: rgb(255, 255, 255); background-repeat: no-repeat;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>os</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>1</number>
+         </property>
+        </widget>
+        <widget class="QLabel" name="deviceLbl">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>40</y>
+           <width>691</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Tahoma</family>
+           <pointsize>8</pointsize>
+           <italic>false</italic>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(none); color: rgb(255, 255, 255); background-color: transparent; background-repeat: no-repeat;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>device</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::PlainText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <property name="indent">
+          <number>-10</number>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::NoTextInteraction</set>
+         </property>
+        </widget>
+        <widget class="QLabel" name="osNameLbl_2">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>53</y>
+           <width>51</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Tahoma</family>
+           <pointsize>8</pointsize>
+           <italic>false</italic>
+           <underline>false</underline>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-image: url(none); background-color: transparent; color: rgb(255, 255, 255); background-repeat: no-repeat;</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>0</number>
+         </property>
+         <property name="text">
+          <string>v2.1</string>
+         </property>
+         <property name="textFormat">
+          <enum>Qt::AutoText</enum>
+         </property>
+         <property name="scaledContents">
+          <bool>false</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="margin">
+          <number>1</number>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="centralLayout">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="centralHorLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QVBoxLayout" name="leftMenuLayout">
+            <property name="spacing">
+             <number>5</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetFixedSize</enum>
+            </property>
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>20</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QToolButton" name="btnTimer">
+              <property name="minimumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+                <kerning>true</kerning>
+               </font>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton {
+color: white; background-color: transparent;
+border-style: solid;
+border-width: 0px;
+}
+
+QToolButton:hover{ 
+color: white; background-color: transparent;
+border-color: rgb(50, 50, 50);
+border-style: outset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width:2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color:  rgb(50, 50, 50);
+border-style: inset;
+border-left-width: 3px;
+border-top-width: 3px;
+border-bottom-width: 3px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: inset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked:hover {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: outset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}</string>
+              </property>
+              <property name="locale">
+               <locale language="English" country="UnitedStates"/>
+              </property>
+              <property name="text">
+               <string>Timer</string>
+              </property>
+              <property name="icon">
+               <iconset resource="rc.qrc">
+                <normaloff>:/images/Timer2.png</normaloff>:/images/Timer2.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>45</width>
+                <height>53</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnFanControl">
+              <property name="minimumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Tahoma</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton {
+color: white; background-color: transparent;
+border-style: solid;
+border-width: 0px;
+}
+
+QToolButton:hover{ 
+color: white; background-color: transparent;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: solid;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}</string>
+              </property>
+              <property name="locale">
+               <locale language="English" country="UnitedStates"/>
+              </property>
+              <property name="text">
+               <string>Fan Control</string>
+              </property>
+              <property name="icon">
+               <iconset resource="rc.qrc">
+                <normaloff>:/images/fan.png</normaloff>:/images/fan.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnSettings">
+              <property name="minimumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton {
+color: white; background-color: transparent;
+border-style: solid;
+border-width: 0px;
+}
+
+QToolButton:hover{ 
+color: white; background-color: transparent;
+border-color: rgb(50, 50, 50);
+border-style: outset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width:2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color:  rgb(50, 50, 50);
+border-style: inset;
+border-left-width: 3px;
+border-top-width: 3px;
+border-bottom-width: 3px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: inset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked:hover {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: outset;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}</string>
+              </property>
+              <property name="locale">
+               <locale language="English" country="UnitedStates"/>
+              </property>
+              <property name="text">
+               <string>Settings</string>
+              </property>
+              <property name="icon">
+               <iconset resource="rc.qrc">
+                <normaloff>:/images/settings.png</normaloff>:/images/settings.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>47</width>
+                <height>49</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QToolButton" name="btnInfo">
+              <property name="minimumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>83</width>
+                <height>75</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QToolButton {
+color: white; background-color: transparent;
+border-style: solid;
+border-width: 0px;
+}
+
+QToolButton:hover{ 
+color: white; background-color: transparent;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+
+QToolButton:checked {
+color: white; 
+background-color: rgb(74,74,74);
+border-left-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-top-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-bottom-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-style: solid;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>info</string>
+              </property>
+              <property name="icon">
+               <iconset resource="rc.qrc">
+                <normaloff>:/images/info.png</normaloff>:/images/info.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>50</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextUnderIcon</enum>
+              </property>
+              <property name="autoRaise">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>80</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="rightCentrLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>5</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QStackedWidget" name="stackedWidget">
+              <property name="styleSheet">
+               <string notr="true">border-radius: 7px; background-color: white; border-style: solid; border-color: gray; border-width: 1px;</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="timerPage">
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <property name="leftMargin">
+                   <number>10</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>10</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>10</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>10</number>
+                  </property>
+                  <item>
+                   <widget class="QTabWidget" name="compTabWdg">
+                    <property name="minimumSize">
+                     <size>
+                      <width>375</width>
+                      <height>480</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Tahoma</family>
+                     </font>
+                    </property>
+                    <property name="mouseTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">QTabWidget {
+border-style: solid;
+border-width: 0px;
+border-color: white;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+	border-style: solid;
+border-width: 0px;
+border-color: white;     
+     position: absolute;
+     top: -0.1em;
+ 
+ }
+
+QWidget {
+border-top-left-radius: 1px;  border-top-right-radius: 1px; 
+border-top-width: 0px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+border-bottom-left-radius: 3px; border-bottom-right-radius: 4px; 
+border-top-color:  rgb(167,167,167); border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: solid;
+}
+
+QTabBar {
+	border-style: solid;
+border-width: 0px;
+border-color: transparent;
+}
+
+ QTabBar::tab {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+     border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 1px;
+     border-top-right-radius: 1px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+     min-width: 8ex;
+     padding: 2px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+ border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+ }
+
+QTabBar::tab:!selected:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	color: blue;
+ border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB;/* same as the pane color */
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+ }
+
+ QTabBar::tab:selected {
+	background-color: white;
+     border-color: #9B9B9B;
+     border-bottom-color: #C2C7CB; /* same as pane color */
+	border-bottom-width: 0px;
+
+	border-top-left-radius: 3px;  border-top-right-radius: 3px; 
+border-top-width: 1px; border-left-width: 1px; 
+border-right-width: 1px; border-bottom-width: 0px;
+border-bottom-left-radius: 1px; border-bottom-right-radius: 1px; 
+border-top-color: #9B9B9B; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+border-style: solid;
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 3px; /* make non-selected tabs look smaller */
+	color: gray;
+border-top-left-radius: 3px;  border-top-right-radius: 3px; 
+border-top-width: 1px; border-left-width: 1px; 
+border-right-width: 1px; border-bottom-width: 0px;
+border-bottom-left-radius: 1px; border-bottom-right-radius: 1px; 
+border-top-color: #9B9B9B; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+border-style: solid;
+
+ }</string>
+                    </property>
+                    <property name="currentIndex">
+                     <number>0</number>
+                    </property>
+                    <property name="documentMode">
+                     <bool>false</bool>
+                    </property>
+                    <widget class="QWidget" name="myComputerTab">
+                     <property name="styleSheet">
+                      <string notr="true">border-top-width: 1px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px;</string>
+                     </property>
+                     <attribute name="icon">
+                      <iconset resource="rc.qrc">
+                       <normaloff>:/images/computer.png</normaloff>:/images/computer.png</iconset>
+                     </attribute>
+                     <attribute name="title">
+                      <string>My Computer</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout_4">
+                      <property name="leftMargin">
+                       <number>2</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>2</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>2</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>2</number>
+                      </property>
+                      <item>
+                       <layout class="QVBoxLayout" name="verticalLayout_3">
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_7">
+                          <property name="leftMargin">
+                           <number>5</number>
+                          </property>
+                          <item>
+                           <spacer name="horizontalSpacer_13">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="startLbl">
+                            <property name="styleSheet">
+                             <string notr="true">color: green;
+font: bold 11px;
+background-color: transparent; 
+border-color: transparent;
+border-style: solid;
+border-width: 0px;
+
+border-top-left-radius: 0px;  border-top-right-radius: 0px; 
+border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px;
+border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; 
+border-top-color: white; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: none;</string>
+                            </property>
+                            <property name="text">
+                             <string>Starting time</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="filterLbl">
+                            <property name="styleSheet">
+                             <string notr="true">color: green;
+font: bold 11px;
+background-color: transparent; 
+border-color: transparent;
+border-style: solid;
+border-width: 0px;
+
+border-top-left-radius: 0px;  border-top-right-radius: 0px; 
+border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px;
+border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; 
+border-top-color: white; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: none;</string>
+                            </property>
+                            <property name="text">
+                             <string>Time to change filter</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="cleanLbl">
+                            <property name="styleSheet">
+                             <string notr="true">color: green;
+font: bold 11px;
+border-color: transparent;
+border-style: solid;
+border-width: 0px;
+
+border-top-left-radius: 0px;  border-top-right-radius: 0px; 
+border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px;
+border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; 
+border-top-color: white; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: none;</string>
+                            </property>
+                            <property name="text">
+                             <string>Time to clean computer</string>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <spacer name="horizontalSpacer_14">
+                            <property name="orientation">
+                             <enum>Qt::Horizontal</enum>
+                            </property>
+                            <property name="sizeHint" stdset="0">
+                             <size>
+                              <width>40</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                           </spacer>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <spacer name="verticalSpacer_5">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeType">
+                           <enum>QSizePolicy::Fixed</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>1</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                        <item>
+                         <widget class="QProgressBar" name="pbTime">
+                          <property name="font">
+                           <font>
+                            <family>Tahoma</family>
+                            <weight>50</weight>
+                            <bold>false</bold>
+                           </font>
+                          </property>
+                          <property name="mouseTracking">
+                           <bool>true</bool>
+                          </property>
+                          <property name="toolTip">
+                           <string>Hours : minutes : seconds before changing filter or cleaning computer / Average usage hours per day</string>
+                          </property>
+                          <property name="layoutDirection">
+                           <enum>Qt::LeftToRight</enum>
+                          </property>
+                          <property name="autoFillBackground">
+                           <bool>false</bool>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QProgressBar {
+border: 1px solid grey;
+border-radius: 0px;
+color: black; 
+selection-background-color: green;
+}
+
+QProgressBar::chunk {
+/*background-color: qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0, 129, 0, 255), stop:1 rgba(0, 223, 0, 255));*/
+width: 5px;
+color: black; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                          </property>
+                          <property name="minimum">
+                           <number>0</number>
+                          </property>
+                          <property name="maximum">
+                           <number>1300</number>
+                          </property>
+                          <property name="value">
+                           <number>1300</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="orientation">
+                           <enum>Qt::Horizontal</enum>
+                          </property>
+                          <property name="invertedAppearance">
+                           <bool>false</bool>
+                          </property>
+                          <property name="textDirection">
+                           <enum>QProgressBar::TopToBottom</enum>
+                          </property>
+                          <property name="format">
+                           <string>%v</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QProgressBar" name="pbStart">
+                          <property name="styleSheet">
+                           <string notr="true">QProgressBar {
+border: 1px solid grey;
+border-radius: 0px;
+color: black; 
+	selection-background-color: green;
+}
+QProgressBar::chunk {
+/*background-color: qlineargradient(spread:reflect, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(0, 129, 0, 255), stop:1 rgba(0, 223, 0, 255));*/
+
+width: 5px;
+color: black; 
+}</string>
+                          </property>
+                          <property name="maximum">
+                           <number>1300</number>
+                          </property>
+                          <property name="value">
+                           <number>1300</number>
+                          </property>
+                          <property name="alignment">
+                           <set>Qt::AlignCenter</set>
+                          </property>
+                          <property name="format">
+                           <string>%v</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <spacer name="verticalSpacer_2">
+                          <property name="orientation">
+                           <enum>Qt::Vertical</enum>
+                          </property>
+                          <property name="sizeHint" stdset="0">
+                           <size>
+                            <width>20</width>
+                            <height>40</height>
+                           </size>
+                          </property>
+                         </spacer>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                    <widget class="QWidget" name="networkTab">
+                     <property name="styleSheet">
+                      <string notr="true">border-top-width: 1px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 0px;</string>
+                     </property>
+                     <attribute name="icon">
+                      <iconset resource="rc.qrc">
+                       <normaloff>:/images/clients.png</normaloff>:/images/clients.png</iconset>
+                     </attribute>
+                     <attribute name="title">
+                      <string>Network</string>
+                     </attribute>
+                     <layout class="QVBoxLayout" name="verticalLayout">
+                      <property name="spacing">
+                       <number>3</number>
+                      </property>
+                      <property name="leftMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <layout class="QVBoxLayout" name="networkMainLayout">
+                        <property name="spacing">
+                         <number>1</number>
+                        </property>
+                        <property name="leftMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>1</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>1</number>
+                        </property>
+                        <item>
+                         <layout class="QHBoxLayout" name="horizontalLayout_6">
+                          <property name="leftMargin">
+                           <number>6</number>
+                          </property>
+                          <property name="topMargin">
+                           <number>2</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>2</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>0</number>
+                          </property>
+                          <item>
+                           <widget class="QLabel" name="label_7">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>50</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">border-style: solid;
+border-width: 0px;</string>
+                            </property>
+                            <property name="text">
+                             <string>Network</string>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QLabel" name="netStatusLbl">
+                            <property name="minimumSize">
+                             <size>
+                              <width>0</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>15</height>
+                             </size>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">border-style: solid;
+border-width: 0px;</string>
+                            </property>
+                            <property name="text">
+                             <string/>
+                            </property>
+                            <property name="alignment">
+                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                            </property>
+                           </widget>
+                          </item>
+                          <item>
+                           <widget class="QToolButton" name="refreshNetBtn">
+                            <property name="toolTip">
+                             <string>Refresh network</string>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QToolButton {
+color: black; background-color: white;
+border-color: lightgray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:hover{ 
+color: black; background-color: lightgray;
+border-color: gray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:pressed {
+	color: black; background-color: gray;
+	border-color: black;
+	border-style: inset;
+	border-width: 1px;
+	border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                            </property>
+                            <property name="text">
+                             <string>...</string>
+                            </property>
+                            <property name="icon">
+                             <iconset resource="rc.qrc">
+                              <normaloff>:/images/earth_view.png</normaloff>:/images/earth_view.png</iconset>
+                            </property>
+                           </widget>
+                          </item>
+                         </layout>
+                        </item>
+                        <item>
+                         <widget class="QTableView" name="networkTbl">
+                          <property name="minimumSize">
+                           <size>
+                            <width>370</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>16777215</height>
+                           </size>
+                          </property>
+                          <property name="font">
+                           <font>
+                            <family>Tahoma</family>
+                           </font>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">selection-background-color: rgb(0, 85, 255);
+selection-color: rgb(255, 255, 255);
+border-style: solid;
+border-top-width: 1px;</string>
+                          </property>
+                          <property name="editTriggers">
+                           <set>QAbstractItemView::NoEditTriggers</set>
+                          </property>
+                          <property name="selectionMode">
+                           <enum>QAbstractItemView::SingleSelection</enum>
+                          </property>
+                          <property name="selectionBehavior">
+                           <enum>QAbstractItemView::SelectRows</enum>
+                          </property>
+                          <property name="iconSize">
+                           <size>
+                            <width>0</width>
+                            <height>0</height>
+                           </size>
+                          </property>
+                          <property name="sortingEnabled">
+                           <bool>true</bool>
+                          </property>
+                          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                           <bool>true</bool>
+                          </attribute>
+                         </widget>
+                        </item>
+                       </layout>
+                      </item>
+                     </layout>
+                    </widget>
+                   </widget>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="timerActionLayout">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMinimumSize</enum>
+                    </property>
+                    <item>
+                     <widget class="QTabWidget" name="actionTabWdg">
+                      <property name="minimumSize">
+                       <size>
+                        <width>389</width>
+                        <height>25</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>24</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Tahoma</family>
+                        <stylestrategy>PreferAntialias</stylestrategy>
+                       </font>
+                      </property>
+                      <property name="mouseTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="autoFillBackground">
+                       <bool>false</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QTabWidget {
+border-style: solid;
+border-width: 0px;
+border-color: white;
+}
+
+QTabWidget::pane { /* The tab widget frame */
+	border-style: solid;
+border-width: 0px;
+border-color: white;     
+     position: absolute;
+     top: -0.1em;
+ border-bottom-width: 1px;
+ }
+
+QWidget {
+border-top-left-radius: 1px;  border-top-right-radius: 1px; 
+border-top-width: 0px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+border-bottom-left-radius: 3px; border-bottom-right-radius: 4px; 
+border-top-color:  rgb(167,167,167); border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: solid;
+}
+
+QTabBar {
+	border-style: solid;
+border-width: 0px;
+border-color: transparent;
+}
+
+ QTabBar::tab {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                 stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+     border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 1px;
+     border-top-right-radius: 1px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+     min-width: 8ex;
+     padding: 2px;
+ }
+
+ QTabBar::tab:selected, QTabBar::tab:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+ border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB; /* same as the pane color */
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+ }
+
+QTabBar::tab:!selected:hover {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                 stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+	color: blue;
+ border: 1px solid #C4C4C3;
+     border-bottom-color: #C2C7CB;/* same as the pane color */
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+	border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+ }
+
+ QTabBar::tab:selected {
+	background-color: white;
+     border-color: #9B9B9B;
+     border-bottom-color: #C2C7CB; /* same as pane color */
+	border-bottom-width: 0px;
+
+	border-top-left-radius: 3px;  border-top-right-radius: 3px; 
+border-top-width: 1px; border-left-width: 1px; 
+border-right-width: 1px; border-bottom-width: 0px;
+border-bottom-left-radius: 1px; border-bottom-right-radius: 1px; 
+border-top-color: #9B9B9B; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+border-style: solid;
+ }
+
+ QTabBar::tab:!selected {
+     margin-top: 3px; /* make non-selected tabs look smaller */
+	color: gray;
+border-top-left-radius: 3px;  border-top-right-radius: 3px; 
+border-top-width: 1px; border-left-width: 1px; 
+border-right-width: 1px; border-bottom-width: 0px;
+border-bottom-left-radius: 1px; border-bottom-right-radius: 1px; 
+border-top-color: #9B9B9B; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+border-style: solid;
+
+ }</string>
+                      </property>
+                      <property name="tabShape">
+                       <enum>QTabWidget::Rounded</enum>
+                      </property>
+                      <property name="currentIndex">
+                       <number>0</number>
+                      </property>
+                      <property name="elideMode">
+                       <enum>Qt::ElideLeft</enum>
+                      </property>
+                      <property name="usesScrollButtons">
+                       <bool>true</bool>
+                      </property>
+                      <property name="documentMode">
+                       <bool>false</bool>
+                      </property>
+                      <widget class="QWidget" name="cleanTab">
+                       <property name="focusPolicy">
+                        <enum>Qt::NoFocus</enum>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);</string>
+                       </property>
+                       <attribute name="icon">
+                        <iconset resource="rc.qrc">
+                         <normaloff>:/images/clean.png</normaloff>:/images/clean.png</iconset>
+                       </attribute>
+                       <attribute name="title">
+                        <string>Clean computer from dust</string>
+                       </attribute>
+                      </widget>
+                      <widget class="QWidget" name="filterTab">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: transparent;</string>
+                       </property>
+                       <attribute name="icon">
+                        <iconset resource="rc.qrc">
+                         <normaloff>:/images/FS8.ico</normaloff>:/images/FS8.ico</iconset>
+                       </attribute>
+                       <attribute name="title">
+                        <string>Change filter</string>
+                       </attribute>
+                      </widget>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QWidget" name="curCompSetsWdg" native="true">
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>389</width>
+                        <height>460</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">border-top-left-radius: 0px;  border-top-right-radius: 1px; 
+border-top-width: 0px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+border-bottom-left-radius: 3px; border-bottom-right-radius: 4px; 
+border-top-color: white; border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: solid;</string>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_6">
+                       <item>
+                        <layout class="QVBoxLayout" name="verticalLayout_5">
+                         <property name="spacing">
+                          <number>3</number>
+                         </property>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_8">
+                           <item>
+                            <spacer name="horizontalSpacer_5">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeType">
+                              <enum>QSizePolicy::Fixed</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QLabel" name="commentLbl">
+                             <property name="minimumSize">
+                              <size>
+                               <width>0</width>
+                               <height>51</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>16777215</width>
+                               <height>51</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border-top-left-radius: 4px;  border-top-right-radius: 4px; 
+border-top-width: 1px; border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px;
+border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; 
+border-top-color:  rgb(167,167,167); border-left-color: rgb(167,167,167); border-right-color: rgb(167,167,167); border-bottom-color: rgb(167,167,167);
+background-color: white; border-style: solid;</string>
+                             </property>
+                             <property name="text">
+                              <string>TextLabel</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                             <property name="wordWrap">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_6">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeType">
+                              <enum>QSizePolicy::Fixed</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>20</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer_3">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_9">
+                           <item>
+                            <spacer name="horizontalSpacer_7">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QCheckBox" name="cbDustyPlace">
+                             <property name="toolTip">
+                              <string>Check this box if the computer is installed in dusty or dirty place, such as: factory, auto service, street, etc.</string>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QCheckBox {
+color: black; 
+background-color: white;
+border-color: transparent;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+height: 10px;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>dusty place</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_8">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_10">
+                           <item>
+                            <spacer name="horizontalSpacer_9">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QWidget" name="compSetsWdgt" native="true">
+                             <property name="minimumSize">
+                              <size>
+                               <width>401</width>
+                               <height>301</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>401</width>
+                               <height>301</height>
+                              </size>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">border-top-left-radius: 0px;  
+border-top-right-radius: 0px; 
+border-top-width: 0px; 
+border-left-width: 0px; 
+border-right-width: 0px; 
+border-bottom-width: 0px;
+border-bottom-left-radius: 0px; 
+border-bottom-right-radius: 0px; 
+border-color: transparent;
+background-color: transparent; 
+border-style: solid;</string>
+                             </property>
+                             <widget class="QLabel" name="lblCompTower">
+                              <property name="geometry">
+                               <rect>
+                                <x>140</x>
+                                <y>80</y>
+                                <width>133</width>
+                                <height>133</height>
+                               </rect>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">background-color: transparent;
+border-color: transparent;</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/247.png</pixmap>
+                              </property>
+                              <property name="scaledContents">
+                               <bool>true</bool>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_hot_left_size">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>132</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Cooler's diameter</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="currentIndex">
+                               <number>1</number>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>80-92 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>120 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>140 mm</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="arr_up">
+                              <property name="geometry">
+                               <rect>
+                                <x>170</x>
+                                <y>198</y>
+                                <width>29</width>
+                                <height>51</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+border-color: transparent; 
+background-color: transparent; 
+color: white;
+}
+
+QLabel:hover {
+border-color: transparent; 
+border-radius: 5px;
+border-style: solid;
+background-color: lightgray; 
+background-color: transparent; 
+color: white;
+background-image: url(:/images/245.png);
+}
+
+QLabel:pressed { 
+color: white;
+background-color: lightgray;
+border-color: black;
+border-style: inset;
+border-width: 1px;
+border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_side_size">
+                              <property name="geometry">
+                               <rect>
+                                <x>250</x>
+                                <y>230</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Cooler's diameter</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="currentIndex">
+                               <number>1</number>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>80-92 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>120 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>140 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>200 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>230 mm</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_up_num">
+                              <property name="geometry">
+                               <rect>
+                                <x>150</x>
+                                <y>260</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Amount of coolers</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>no fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>1 fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>2 fans</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="arr_left">
+                              <property name="geometry">
+                               <rect>
+                                <x>260</x>
+                                <y>150</y>
+                                <width>48</width>
+                                <height>30</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+border-color: transparent; 
+background-color: transparent; 
+color: white;
+}
+
+QLabel:hover {
+border-color: transparent; 
+border-radius: 5px;
+border-style: solid;
+background-color: lightgray; 
+background-color: transparent; 
+color: white;
+background-image: url(:/images/246.png);
+}
+
+QLabel:pressed { 
+color: white;
+background-color: lightgray;
+border-color: black;
+border-style: inset;
+border-width: 1px;
+border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_hot_left">
+                              <property name="geometry">
+                               <rect>
+                                <x>110</x>
+                                <y>115</y>
+                                <width>48</width>
+                                <height>30</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+border-color: transparent; 
+background-color: transparent; 
+color: white;
+}
+
+QLabel:hover {
+border-color: transparent; 
+border-radius: 5px;
+border-style: solid;
+background-color: lightgray; 
+background-color: transparent; 
+color: white;
+background-image: url(:/images/244.png);
+}
+
+QLabel:pressed { 
+color: white;
+background-color: lightgray;
+border-color: black;
+border-style: inset;
+border-width: 1px;
+border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_left_num">
+                              <property name="geometry">
+                               <rect>
+                                <x>310</x>
+                                <y>143</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Amount of coolers</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>no fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>1 fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>2 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>3 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>4 fans</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_up_size">
+                              <property name="geometry">
+                               <rect>
+                                <x>150</x>
+                                <y>280</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Cooler's diameter</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="currentIndex">
+                               <number>1</number>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>80-92 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>120 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>140 mm</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_hot_up_size">
+                              <property name="geometry">
+                               <rect>
+                                <x>150</x>
+                                <y>30</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Cooler's diameter</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="currentIndex">
+                               <number>1</number>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>80-92 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>120 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>140 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>200 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>230 mm</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_left_size">
+                              <property name="geometry">
+                               <rect>
+                                <x>310</x>
+                                <y>163</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Cooler's diameter</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 18px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="currentIndex">
+                               <number>1</number>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>80-92 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>120 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>140 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>200 mm</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>230 mm</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_hot_left_num">
+                              <property name="geometry">
+                               <rect>
+                                <x>20</x>
+                                <y>112</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Amount of coolers</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>нет кулеров</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>1 fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>2 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>3 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>4 fans</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="arr_side">
+                              <property name="geometry">
+                               <rect>
+                                <x>190</x>
+                                <y>160</y>
+                                <width>41</width>
+                                <height>41</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+border-color: transparent; 
+background-color: transparent; 
+color: white;
+}
+
+QLabel:hover {
+border-color: transparent; 
+border-radius: 5px;
+border-style: solid;
+background-color: lightgray; 
+background-color: transparent; 
+color: white;
+background-image: url(:/images/241.png);
+}
+
+QLabel:pressed { 
+color: white;
+background-color: lightgray;
+border-color: black;
+border-style: inset;
+border-width: 1px;
+border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_hot_up">
+                              <property name="geometry">
+                               <rect>
+                                <x>170</x>
+                                <y>50</y>
+                                <width>29</width>
+                                <height>41</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+border-color: transparent; 
+background-color: transparent; 
+color: white;
+}
+
+QLabel:hover {
+border-color: transparent; 
+border-radius: 5px;
+border-style: solid;
+background-color: lightgray; 
+background-color: transparent; 
+color: white;
+background-image: url(:/images/243.png);
+}
+
+QLabel:pressed { 
+color: white;
+background-color: lightgray;
+border-color: black;
+border-style: inset;
+border-width: 1px;
+border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_hot_up_num">
+                              <property name="geometry">
+                               <rect>
+                                <x>150</x>
+                                <y>10</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Amount of coolers</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="frame">
+                               <bool>true</bool>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>no fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>1 fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>2 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>3 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>4 fans</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QComboBox" name="cbox_side_num">
+                              <property name="geometry">
+                               <rect>
+                                <x>250</x>
+                                <y>210</y>
+                                <width>86</width>
+                                <height>20</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Amount of coolers</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QComboBox {
+background-color: white;
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+ }
+
+ QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+ }
+
+QComboBox::drop-down {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;
+ }
+QComboBox::down-arrow {
+image: url(:/images/down3.png);
+width: 14;
+height: 14;
+}
+
+QComboBox::drop-down:hover {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;	
+     width: 15px;
+     border-left-width: 1px;
+     border-left-color: darkgray;
+     border-left-style: solid; /* just a single line */
+     border-top-right-radius: 3px; /* same radius as the QComboBox */
+     border-bottom-right-radius: 3px;	
+ }
+
+QComboBox:hover {
+background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0, stop:0 rgba(160, 160, 160, 255), stop:1 rgba(255, 255, 255, 255));
+selection-color: white;
+selection-background-color: gray;
+border: 1px solid gray;
+border-color: darkgray;
+border-radius: 3px;    
+padding: 1px 1px 1px 3px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                              </property>
+                              <property name="frame">
+                               <bool>true</bool>
+                              </property>
+                              <item>
+                               <property name="text">
+                                <string>no fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>1 fan</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>2 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>3 fans</string>
+                               </property>
+                              </item>
+                              <item>
+                               <property name="text">
+                                <string>4 fans</string>
+                               </property>
+                              </item>
+                             </widget>
+                             <widget class="QLabel" name="arr_hot_left_2">
+                              <property name="geometry">
+                               <rect>
+                                <x>110</x>
+                                <y>115</y>
+                                <width>48</width>
+                                <height>30</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/244.png</pixmap>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_hot_up_2">
+                              <property name="geometry">
+                               <rect>
+                                <x>170</x>
+                                <y>54</y>
+                                <width>29</width>
+                                <height>41</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/243.png</pixmap>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_left_2">
+                              <property name="geometry">
+                               <rect>
+                                <x>260</x>
+                                <y>148</y>
+                                <width>48</width>
+                                <height>30</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/246.png</pixmap>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_side_2">
+                              <property name="geometry">
+                               <rect>
+                                <x>190</x>
+                                <y>160</y>
+                                <width>41</width>
+                                <height>41</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/241.png</pixmap>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <widget class="QLabel" name="arr_up_2">
+                              <property name="geometry">
+                               <rect>
+                                <x>170</x>
+                                <y>198</y>
+                                <width>29</width>
+                                <height>51</height>
+                               </rect>
+                              </property>
+                              <property name="mouseTracking">
+                               <bool>true</bool>
+                              </property>
+                              <property name="toolTip">
+                               <string>Add cooler</string>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="rc.qrc">:/images/245.png</pixmap>
+                              </property>
+                              <property name="textInteractionFlags">
+                               <set>Qt::NoTextInteraction</set>
+                              </property>
+                             </widget>
+                             <zorder>arr_up_2</zorder>
+                             <zorder>arr_left_2</zorder>
+                             <zorder>arr_hot_up_2</zorder>
+                             <zorder>arr_hot_up</zorder>
+                             <zorder>arr_left</zorder>
+                             <zorder>arr_up</zorder>
+                             <zorder>lblCompTower</zorder>
+                             <zorder>cbox_hot_left_size</zorder>
+                             <zorder>cbox_side_size</zorder>
+                             <zorder>cbox_up_num</zorder>
+                             <zorder>cbox_left_num</zorder>
+                             <zorder>cbox_up_size</zorder>
+                             <zorder>cbox_hot_up_size</zorder>
+                             <zorder>cbox_left_size</zorder>
+                             <zorder>cbox_hot_left_num</zorder>
+                             <zorder>cbox_hot_up_num</zorder>
+                             <zorder>cbox_side_num</zorder>
+                             <zorder>arr_side_2</zorder>
+                             <zorder>arr_side</zorder>
+                             <zorder>arr_hot_left_2</zorder>
+                             <zorder>arr_hot_left</zorder>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_10">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <spacer name="verticalSpacer_4">
+                           <property name="orientation">
+                            <enum>Qt::Vertical</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>20</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_11">
+                           <item>
+                            <spacer name="horizontalSpacer_11">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                           <item>
+                            <widget class="QToolButton" name="bt_stop">
+                             <property name="minimumSize">
+                              <size>
+                               <width>91</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>91</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Tahoma</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="mouseTracking">
+                              <bool>true</bool>
+                             </property>
+                             <property name="focusPolicy">
+                              <enum>Qt::StrongFocus</enum>
+                             </property>
+                             <property name="toolTip">
+                              <string>Stop the timer and reset time</string>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QToolButton {
+color: black; background-color: white;
+border-color: lightgray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:hover{ 
+color: black; background-color: lightgray;
+border-color: gray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:pressed {
+	color: black; background-color: gray;
+	border-color: black;
+	border-style: inset;
+	border-width: 1px;
+	border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Stop</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="rc.qrc">
+                               <normaloff>:/images/clock_stop.png</normaloff>:/images/clock_stop.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>30</width>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="toolButtonStyle">
+                              <enum>Qt::ToolButtonTextBesideIcon</enum>
+                             </property>
+                             <property name="autoRaise">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QToolButton" name="bt_pause">
+                             <property name="minimumSize">
+                              <size>
+                               <width>91</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Tahoma</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="toolTip">
+                              <string>Pause the timer</string>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QToolButton {
+color: black; background-color: white;
+border-color: lightgray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:hover{ 
+color: black; background-color: lightgray;
+border-color: gray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:pressed {
+	color: black; background-color: gray;
+	border-color: black;
+	border-style: inset;
+	border-width: 1px;
+	border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Pause</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="rc.qrc">
+                               <normaloff>:/images/clock_pause.png</normaloff>:/images/clock_pause.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>30</width>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="toolButtonStyle">
+                              <enum>Qt::ToolButtonTextBesideIcon</enum>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QToolButton" name="bt_start">
+                             <property name="minimumSize">
+                              <size>
+                               <width>91</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="maximumSize">
+                              <size>
+                               <width>91</width>
+                               <height>40</height>
+                              </size>
+                             </property>
+                             <property name="font">
+                              <font>
+                               <family>Tahoma</family>
+                               <pointsize>14</pointsize>
+                              </font>
+                             </property>
+                             <property name="mouseTracking">
+                              <bool>true</bool>
+                             </property>
+                             <property name="focusPolicy">
+                              <enum>Qt::StrongFocus</enum>
+                             </property>
+                             <property name="toolTip">
+                              <string>Start/continue the timer</string>
+                             </property>
+                             <property name="styleSheet">
+                              <string notr="true">QToolButton {
+color: black; background-color: white;
+border-color: lightgray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:hover{ 
+color: black; background-color: lightgray;
+border-color: gray;
+border-style: solid;
+border-width: 1px;
+border-radius: 5px;
+}
+
+QToolButton:pressed {
+	color: black; background-color: gray;
+	border-color: black;
+	border-style: inset;
+	border-width: 1px;
+	border-radius: 5px; 
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                             </property>
+                             <property name="text">
+                              <string>Start</string>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="rc.qrc">
+                               <normaloff>:/images/clock_run.png</normaloff>:/images/clock_run.png</iconset>
+                             </property>
+                             <property name="iconSize">
+                              <size>
+                               <width>30</width>
+                               <height>30</height>
+                              </size>
+                             </property>
+                             <property name="toolButtonStyle">
+                              <enum>Qt::ToolButtonTextBesideIcon</enum>
+                             </property>
+                             <property name="autoRaise">
+                              <bool>true</bool>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <spacer name="horizontalSpacer_12">
+                             <property name="orientation">
+                              <enum>Qt::Horizontal</enum>
+                             </property>
+                             <property name="sizeHint" stdset="0">
+                              <size>
+                               <width>40</width>
+                               <height>20</height>
+                              </size>
+                             </property>
+                            </spacer>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="fanControlPage"/>
+              <widget class="QWidget" name="settingsPage">
+               <widget class="QGroupBox" name="groupBox">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>160</y>
+                  <width>311</width>
+                  <height>201</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                </property>
+                <property name="title">
+                 <string>Network Settings</string>
+                </property>
+                <widget class="QCheckBox" name="cb_showNetName">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>20</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Computer Name</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showIp">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>45</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Ip-address</string>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showClean">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>70</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Clean Time Like Text</string>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showFilter">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>95</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Filter Time Like Text</string>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showOs">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>145</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Operating System Name of the Computer</string>
+                 </property>
+                 <property name="tristate">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showStatus">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>170</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Computer Status</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QCheckBox" name="cb_showTime">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>120</y>
+                   <width>290</width>
+                   <height>18</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Show Current Time Like Progress Bar</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QGroupBox" name="groupBox_2">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>50</y>
+                  <width>261</width>
+                  <height>91</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                </property>
+                <property name="title">
+                 <string>Program Language</string>
+                </property>
+                <widget class="QPushButton" name="bt_ukrLang">
+                 <property name="geometry">
+                  <rect>
+                   <x>320</x>
+                   <y>30</y>
+                   <width>101</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+color: gray; 
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:hover{ 
+color: black; background-color: lightgray;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:checked {
+color: white; 
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-left-color: gray;
+border-right-color: gray;
+border-top-color: gray;
+border-bottom-color: gray;
+border-style: solid;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 2px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Ukranian</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="rc.qrc">
+                   <normaloff>:/images/ua.gif</normaloff>:/images/ua.gif</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>false</bool>
+                 </property>
+                 <property name="default">
+                  <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="bt_rusLang">
+                 <property name="geometry">
+                  <rect>
+                   <x>140</x>
+                   <y>30</y>
+                   <width>111</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+color: gray; 
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:hover{ 
+color: black; background-color: lightgray;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:checked {
+color: white; 
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-left-color: gray;
+border-right-color: gray;
+border-top-color: gray;
+border-bottom-color: gray;
+border-style: solid;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 2px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Russian</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="rc.qrc">
+                   <normaloff>:/images/ru.gif</normaloff>:/images/ru.gif</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>false</bool>
+                 </property>
+                 <property name="default">
+                  <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="bt_engLang">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>30</y>
+                   <width>111</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+color: gray; 
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:hover{ 
+color: black; background-color: lightgray;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:checked {
+color: white; 
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(40, 40, 40, 255), stop:1 rgba(74, 74, 74, 255));
+border-left-color: gray;
+border-right-color: gray;
+border-top-color: gray;
+border-bottom-color: gray;
+border-style: solid;
+border-left-width: 2px;
+border-top-width: 2px;
+border-bottom-width: 2px;
+border-right-width: 2px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>English</string>
+                 </property>
+                 <property name="icon">
+                  <iconset resource="rc.qrc">
+                   <normaloff>:/images/en.gif</normaloff>:/images/en.gif</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>false</bool>
+                 </property>
+                 <property name="default">
+                  <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="geometry">
+                 <rect>
+                  <x>360</x>
+                  <y>20</y>
+                  <width>211</width>
+                  <height>131</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                </property>
+                <property name="title">
+                 <string>Tray warning message </string>
+                </property>
+                <widget class="QRadioButton" name="rb_dontShowWarning">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>20</y>
+                   <width>220</width>
+                   <height>17</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>don't show</string>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rb_show10minsWarning">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>40</y>
+                   <width>220</width>
+                   <height>17</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>show every 10 minutes</string>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rb_show30minsWarning">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>60</y>
+                   <width>220</width>
+                   <height>17</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>show every 30 minutes</string>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rb_show60minsWarning">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>80</y>
+                   <width>220</width>
+                   <height>17</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>show every 60 minutes</string>
+                 </property>
+                </widget>
+                <widget class="QRadioButton" name="rb_showAtStartWarning">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>100</y>
+                   <width>220</width>
+                   <height>17</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;</string>
+                 </property>
+                 <property name="text">
+                  <string>show only at startup</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>380</y>
+                  <width>331</width>
+                  <height>121</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: black; 
+background-color: transparent;
+border-color: gray;
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;</string>
+                </property>
+                <property name="title">
+                 <string>Email warnings</string>
+                </property>
+                <widget class="QCheckBox" name="cb_sendEmail">
+                 <property name="geometry">
+                  <rect>
+                   <x>15</x>
+                   <y>20</y>
+                   <width>311</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                 </property>
+                 <property name="text">
+                  <string>Send warning messages to your email address?</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                 <property name="tristate">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+                <widget class="QLineEdit" name="emailEdit">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>70</y>
+                   <width>311</width>
+                   <height>20</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLineEdit {
+color: black; 
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QLineEdit:hover{ 
+color: black; background-color: lightgray;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}</string>
+                 </property>
+                 <property name="inputMask">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="placeholderText">
+                  <string>enter your email</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>50</y>
+                   <width>291</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: black; 
+background-color: transparent;
+border-style: solid;
+border-width: 0px;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Your email address:</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="bt_sendTest">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>95</y>
+                   <width>201</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="toolTip">
+                  <string>Test email will be sent to your email address</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton {
+color: black; 
+background-color: transparent;
+border-style: solid;
+border-width: 1px;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:hover{ 
+color: black; background-color: lightgray;
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QPushButton:pressed {
+color: white; background-color: rgb(74,74,74);
+border-color: rgb(60,60,60);
+border-style: solid;
+border-left-width: 1px;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+QToolTip { 
+border: 1px solid darkgray; 
+border-radius: 0px;
+background-color: lightgray;
+color: black;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Send test email</string>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                 <property name="autoDefault">
+                  <bool>false</bool>
+                 </property>
+                 <property name="default">
+                  <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+               <widget class="QCheckBox" name="rb_autorunProgr">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>281</width>
+                  <height>18</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-radius: 7px; background-color: transparent; border-style: solid; border-color: transparent; border-width: 1px;</string>
+                </property>
+                <property name="text">
+                 <string>Run program at Windows startup?</string>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="infoPage">
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="leftMargin">
+                 <number>9</number>
+                </property>
+                <item>
+                 <layout class="QVBoxLayout" name="infoMainLayout">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMinimumSize</enum>
+                    </property>
+                    <item>
+                     <spacer name="horizontalSpacer_3">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame">
+                      <property name="minimumSize">
+                       <size>
+                        <width>261</width>
+                        <height>33</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>261</width>
+                        <height>33</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">image: url(:/images/logo_label.png); border-color: transparent;</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <property name="midLineWidth">
+                       <number>0</number>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="infoTextMainLayout">
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMaximumSize</enum>
+                    </property>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <property name="sizeConstraint">
+                     <enum>QLayout::SetMinimumSize</enum>
+                    </property>
+                    <item>
+                     <spacer name="horizontalSpacer_4">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_5">
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: black; border-color: transparent;</string>
+                      </property>
+                      <property name="text">
+                       <string>© 2009-2012 DusTend. All rights reserved.</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="bottomLayout">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <property name="leftMargin">
+         <number>20</number>
+        </property>
+        <property name="topMargin">
+         <number>4</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lblHelp">
+          <property name="font">
+           <font>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.dustend.com/help.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color: white;&quot;&gt;On-line help&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblCheckUpdates">
+          <property name="font">
+           <font>
+            <underline>true</underline>
+           </font>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="locale">
+           <locale language="English" country="UnitedStates"/>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://www.dustend.com/download.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:white;&quot;&gt;Check for updates...&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="sizeGripLbl">
+          <property name="cursor">
+           <cursorShape>SizeFDiagCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="rc.qrc">:/images/2012.jpg</pixmap>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>
